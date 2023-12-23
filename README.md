@@ -32,6 +32,7 @@ You can support me with patreon [Click here](https://patreon.com/mohsenzare?utm_
 * Color brush which support different algorithm (splatmapping, bitwise, index mapping ...)
   
 ![Screenshot_20230719_144752](https://github.com/mohsenph69/Godot-MTerrain-plugin/assets/52196206/704c51a8-7554-4345-907b-efc635a67dd0)
+![Terrain_dev_thumnail](https://github.com/mohsenph69/mterrain_release/assets/52196206/b537f48e-4fbc-4316-9795-d16a8ecc3441)
 
 
 ## download
@@ -46,3 +47,5 @@ First clone this repo on your local machine, so you need godot-cpp to exist in G
 git submodule update --init --recursive
 ```
 This will automaticly pull godot-cpp into GDextension folder, After that go inside GDExtension folder and use scons to build this project
+
+
