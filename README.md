@@ -1,7 +1,7 @@
 # Only for M Terrain Plugin release
 The main repo is Here https://github.com/mohsenph69/Godot-MTerrain-plugin
 
-![alien_planet](https://github.com/mohsenph69/mterrain_release/assets/52196206/07aa7e52-f0f5-488a-863e-8db7ea9e0431)
+![alien_planet_adding_water](https://github.com/mohsenph69/mterrain_release/assets/52196206/dd25428d-791b-41d6-977e-500cbf607b13)
 
 
 ![Screenshot_20230707_104154](https://github.com/mohsenph69/Godot-MTerrain-plugin/assets/52196206/7e3eb7da-af57-4ae5-8f55-f9fc1c8b26f8)
