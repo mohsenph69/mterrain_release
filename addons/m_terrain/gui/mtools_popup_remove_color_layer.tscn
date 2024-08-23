@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://cj0dtgvd7v07g"]
+
+[ext_resource type="Theme" uid="uid://b3bd1lceed8ec" path="res://addons/m_terrain/gui/styles/mterrain_gui_theme.tres" id="1_ebtbp"]
+[ext_resource type="Script" path="res://addons/m_terrain/gui/mtools_popup_remove_color_layer.gd" id="2_65b52"]
+
+[node name="Control" type="Window"]
+initial_position = 2
+size = Vector2i(400, 300)
+wrap_controls = true
+always_on_top = true
+popup_window = true
+theme = ExtResource("1_ebtbp")
+script = ExtResource("2_65b52")
+
+[node name="Panel" type="PanelContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Are you sure? 
+
+You will not be able to undo this."
+horizontal_alignment = 1
+
+[node name="shared_uniform_label" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "This image is also used by:"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="delete_layer" type="Button" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Delete Layer Only"
+
+[node name="delete_layer_and_image" type="Button" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Delete Image And Connnected Layers"
+
+[node name="cancel_button" type="Button" parent="Panel/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Cancel"
