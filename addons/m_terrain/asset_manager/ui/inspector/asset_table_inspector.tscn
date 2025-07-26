@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://cypjfwjlguowi"]
+
+[ext_resource type="Script" uid="uid://bgpe1kot22fas" path="res://addons/m_terrain/asset_manager/ui/inspector/asset_table_inspector.gd" id="1_oevxw"]
+
+[node name="Control" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_oevxw")
+
+[node name="clear_btn" type="Button" parent="."]
+layout_mode = 2
+text = "Clear"
+
+[node name="reload_btn" type="Button" parent="."]
+layout_mode = 2
+text = "Reload"
+
+[node name="collections_label" type="RichTextLabel" parent="."]
+custom_minimum_size = Vector2(100, 120)
+layout_mode = 2
+bbcode_enabled = true
+autowrap_mode = 1
